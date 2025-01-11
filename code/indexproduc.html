@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Подарунки для кожного</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #8b3a62;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+        nav {
+            text-align: center;
+            background-color: #f1f1f1;
+            padding: 10px;
+        }
+        nav a {
+            color: #8b3a62;
+            margin: 0 15px;
+            text-decoration: none;
+            font-size: 18px;
+        }
+        nav a:hover {
+            color: #fff;
+            background-color: #8b3a62;
+            padding: 5px;
+            border-radius: 5px;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 20px;
+        }
+        .product {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            margin: 15px;
+            text-align: center;
+            overflow: hidden;
+        }
+        .product img {
+            width: 100%;
+            height: 50%; 
+            object-fit: cover; 
+        }
+        .product h3 {
+            color: #8b3a62;
+            padding: 10px;
+        }
+        .product p {
+            padding: 0 10px;
+            color: #555;
+        }
+        .product .price {
+            font-size: 20px;
+            color: #e91e63;
+            padding: 10px;
+        }
+        .description {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: #fff;
+            border: 1px solid #8b3a62;
+            padding: 20px;
+            width: 300px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            z-index: 10;
+        }
+        .show-description {
+            background-color: #8b3a62;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+            margin: 10px;
+        }
+        .show-description:hover {
+            background-color: #5c2a44;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #8b3a62;
+            color: white;
+        }
+    </style>
+</head>
+
+
+<body>
+
+<header>
+    <h1>Квітковий магазин - Подарунки для кожного</h1>
+</header>
+
+<nav>
+    <a href="index.html">Головна</a>
+    <a href="#">Про нас</a>
+    <a href="#">Контакти</a>
+</nav>
+
+
+<div class="container">
+    <div class="product">
+        <img src="https://auchan.ua/media/catalog/product/8/0/800126.jpg" alt="Подарунок 1">
+        <h3>Чарівний медведик (2м)</h3>
+        <button class="show-description" id="showDescBtn1">Дізнатися більше</button>
+        <div class="price">2500 грн</div>
+        
+    </div>
+    <div class="product">
+        <img src="https://images.prom.ua/3581212818_w640_h320_podarochnye-pakety-shariki.jpg" alt="Подарунок 2">
+        <h3>Кульки подарункові</h3>
+        <button class="show-description" id="showDescBtn2">Дізнатися більше</button>
+        <div class="price">700 грн</div>
+        
+    </div>
+
+    <div class="product">
+        <img src="https://images.shafastatic.net/1417402039" alt="Подарунок 3">
+        <h3>Подарунковий бокс</h3>
+            <button class="show-description" id="showDescBtn3">Дізнатися більше</button>
+        <div class="price">800 грн</div>
+
+    </div>
+</div>
+
+
+
+
+<div class="description" id="descBox1">
+    <p><strong>Медведик</strong> – Пухнастий плюшевий медведик стане чудовим супутником для ваших близьких. Він символізує тепло і турботу, додаючи до подарунку ще більше ніжності.</p>
+</div>
+
+<div class="description" id="descBox2">
+    <p><strong>Кульки</strong> – Яскраві та святкові кульки зроблять будь-яку подію незабутньою! Вибір різних кольорів і форм дозволяє створити атмосферу радості і святкового настрою.</p>
+</div>
+
+<div class="description" id="descBox3">
+    <p><strong>Подарунковий бокс</strong> – Ідеальний варіант для тих, хто хоче подарувати не тільки квіти, але й емоції. Наш подарунковий бокс містить елегантну композицію квітів, шоколад, ароматні свічки та інші маленькі сюрпризи, які зроблять кожен момент особливим.</p>
+</div>
+
+
+<footer>
+    <p>&copy; 2025 Квітковий магазин. Усі права захищено.</p>
+</footer>
+<script src="jscode-productpage.js"></script>
+
+
+</body>
+</html>
